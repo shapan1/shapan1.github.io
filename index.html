@@ -1,404 +1,222 @@
-<!DOCTYPE html>
-<html lang="en"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Shapan Dashore</title>
-<link rel="stylesheet" type="text/css" href="Shapan%20Dashore_files/normalize.css">
-<link rel="stylesheet" type="text/css" href="Shapan%20Dashore_files/css.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- <link rel="stylesheet" type="text/css" href="Shapan%20Dashore_files/font-awesome.css"> -->
-<style type="text/css">
-/*<!--*/
-body {
-	font-size: 62.5%;
-	font-family: "Montserrat", sans-serif;
-	background-color: #171717;
-	color: #eeeeee;
-}
-.main-wrap {
-	max-width: 960px;
-	margin: 0 auto;
-}
-a {
-	color: #aaaaaa;
-	text-decoration: none;
-	-webkit-transition: color 0.175s ease 0.05s;
-	   -moz-transition: color 0.175s ease 0.05s;
-	        transition: color 0.175s ease 0.05s;
-}
-a:visited {
-	color: #aaaaaa;
-}
-a:hover,
-a:focus {
-	color: #777777;
-	text-decoration: none;
-}
-.header {
-	text-align: center;
-	font-size: 2em;
-	margin: 0 10%;
-}
-.section {
-	padding: 1em 1em 0 1em;
-	margin-bottom: 1em;
-}
-.section .fa.left {
-	margin-right: 0.25em;
-}
-h1 {
-	color: #eeeeee;
-	font-size: 2em;
-	margin: 1em 0 0;
-	text-transform: uppercase;
-}
-h2 {
-	font-size: 3.5em;
-	margin: 0.83em 0;
-	text-transform: uppercase;
-}
-h3 {
-	color: #aaaaaa;
-	font-size: 1.75em;
-	margin: 1em 0 0;
-}
-h4 {
-	color: #666666;
-	font-size: 1.25em;
-	margin: 0 0 1em;
-}
-.profile {
-	font-family: "Montserrat";
-	font-size: 1em;
-	margin: 0;
-}
-.profile-name {
-	display: none;
-}
-.contact-header {
-	font-weight: bold;
-}
-.contact-list li,
-.contact-list a {
-	color: #eeeeee;
-}
-.label {
-	margin-top: 0;
-	margin-bottom: 0.25em;
-}
-.fa {
-	font-size: 2em;
-}
-.left {
-	font-size: 1em;
-}
-.main {
-	margin: 0 10% 5em;
-}
-.skills {
-	margin-bottom: 0.5em;
-}
-p {
-	color: #aaaaaa;
-	font-family: "Open Sans";
-	font-size: 1.5em;
-}
-li {
-	color: #aaaaaa;
-	font-family: "Open Sans";
-	font-size: 1.5em;
-}
-.list-lines,
-.list-lines li {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-.list-lines li {
-	font-family: "Montserrat";
-	font-size: 1em;
-}
-.list-set,
-.list-set li {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-.list-set li {
-	font-family: "Montserrat";
-	display: inline-block;
-}
-.list-set li a {
-	display: inline-block;
-}
-.list-set li .fa {
-	min-width: 1em;
-	min-height: 1em;
-}
-/*Minor adjustment to icons.*/
-.list-set li .fa-stack-overflow:before {
-	font-size: 0.9em;
-	position: relative;
-	top: -0.05em;
-}
-.list-set.keywords {
-	overflow: hidden;
-}
-.list-set.keywords li {
-	background-color: #444444;
-	color: #eeeeee;
-	padding: 0.4em 0.5em;
-	font-size: 1.2em;
-	display: inline-block;
-	margin: 1px;
-	float: left;
-}
-.profiles-list {
-	margin-top: 0.75em;
-}
-blockquote {
-	margin: 2em 1em;
-	padding: 1em;
-	border-left: 0.75em solid #666666;
-	font-family: "Open Sans";
-	font-size: 1.5em;
-}
-blockquote .name {
-	font-weight: bold;
-	font-family: "Montserrat";
-	margin-top: 1em;
-}
-::-moz-selection {
-	background: #666666;
-}
-::selection {
-	background: #666666;
-}
-@media (max-width: 768px) {
-	body {
-		font-size: 50%;
-	}
-	.header {
-		margin: 0 5%;
-	}
-	.main {
-		margin: 0 5%;
-	}
-}
-@media print {
-	body {
-		background: #FFFFFF;
-		color: #171717;
-	}
-	.main-wrap {
-		width: 100%;
-	}
-	.main {
-		margin: 0 0 1em 0;
-	}
-	.section {
-		page-break-inside: avoid;
-	}
-	.main .section:last-child {
-		margin-bottom: 0;
-	}
-	a {
-		color: #555555;
-	}
-	a:visited {
-		color: #555555;
-	}
-	a:hover,
-	a:focus {
-		color: #555555;
-	}
-	h1 {
-		color: #111111;
-		margin-top: 0.5em;
-	}
-	h2 {
-		margin: 0.25em 0;
-	}
-	h3 {
-		color: #555555;
-	}
-	h4 {
-		color: #bbbbbb;
-	}
-	.contact-list li,
-	.contact-list a {
-		color: #111111;
-	}
-	p {
-		color: #555555;
-	}
-	li {
-		color: #555555;
-	}
-	.list-set.keywords li {
-		background-color: transparent;
-		color: #555555;
-		border: 1px solid #aaaaaa;
-	}
-	blockquote {
-		border-color: #999999;
-	}
-	* {
-		/*Avoid printing the color at the start of the transition (Chrome issue).*/
-		-webkit-transition: none !important;
-		   -moz-transition: none !important;
-		        transition: none !important;
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd"> <html>
+<head>
+<h1 text-align:'center'>PRP Calculator</h1>
+<style>
+    h1, h2 {
+        text-align: center;
+    }
+    .div1 {
+        text-align: center;
+    }
 
-	}
-}
-/*-->*/
-		</style>
-<!--[if lt IE 9]>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv-printshiv.min.js"></script>
-		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
-		<![endif]-->
-<style></style></head>
+    .div2 {
+        text-align: center;
+    }
+    #Step1 {
+        margin: auto;
+    }
+
+    #button2{
+        margin: auto;
+    }
+
+    #button1 {
+        margin: auto;
+    }
+    #Step2 {
+        margin: auto;
+    }
+
+</style>
+</head>
+
 <body>
-<div class="main-wrap">
-<header class="header">
-<h1>Shapan Dashore</h1>
-<h3 class="label">Programmer</h3>
-<ul id="contact" class="contact-list list-lines">
-<li class="contact-header">(412) 265-5395</li>
-<li class="contact-header"><a href="mailto:shapandashore@gmail.com">shapandashore@gmail.com</a></li>
-</ul>
-<ul id="profiles" class="profiles-list list-set">
-<li><a href="https://www.linkedin.com/in/shapandashore/" class="profile" title="LinkedIn"><i class="fa fa-linkedin"></i><span class="profile-name">LinkedIn</span></a></li>
-<li><a href="https://github.com/shapan1" class="profile" title="GitHub"><i class="fa fa-github"></i><span class="profile-name">GitHub</span></a></li>
-</ul>
-</header>
-<main role="main" class="main">
-<section id="about" class="section">
-<h2><i class="fa fa-user left"></i>About</h2>
-<p>Shapan hails from Pittsburgh. He has earned his master's degree from 
-Carnegie Mellon University in the field of Information Technology. He 
-works for Dick's Sporting Goods as a full time software developer. While
- his work focuses on web and mobile development, performance 
-optimizations, production support for a billion dollar corporation. He 
-could tell you about it, but THAT would NOT be a “length-limited” 
-conversation!</p>
-</section>
-<section id="work" class="section">
-<h2><i class="fa fa-suitcase left"></i>Work Experience</h2>
-<section class="section-sub section-sub-job">
-<h3>Application Developer, Dick's Sporting Goods</h3>
-<h4>November 2016 - Present</h4>
-<p>Currently working on the Dick's Sporting Goods, Field &amp; Stream 
-and Golf Galaxy websites and successfully launched the Team Sports Head 
-Quarters website</p>
-<h4>Highlights</h4>
-<ul>
-<li>Containerizing the Spring Java backend app responsible for handling 2 million API calls a day to K8s cluster in Google Kubernetes Engine</li>
-<li>Successfully intergrated omni channel fullfilment methods from the 
-customer order request to the Enterprise order Management utilizing 
-WebMethods middleware</li>
-<li>Built up payment method functionalities to include Private Label credit cards</li>
-<li>Designed, a full stack solution, Team Sports HQ website to digitize 
-and automate the item catalog management, order creation, inventory 
-management and fulfillment retail operations for 7000 youth sports 
-leagues.</li>
-</ul>
-</section>
-<section class="section-sub section-sub-job">
-<h3>Software Engineer Intern, Dick's Sporting Goods</h3>
-<h4>June 2016 - August 2016</h4>
-<p>Developed an end-to-end Java web app</p>
-<h4>Highlights</h4>
-<ul>
-<li>Created a web app capable of providing personalized product search experience for registered customers.</li>
-<li>Collaborated with DSG data science and CRM team to test and optimize
- the accuracy of the Multiclass decision forest Machine Learning model 
-for predictive and navigational personalization.</li>
-<li>Deployed to AWS EC2 instances for seamless incremental and decremental scalability.</li>
-</ul>
-</section>
-<section class="section-sub section-sub-job">
-<h3>Projects, GitHub</h3>
-<h4> - Present</h4>
-<p>I have been developing several projects while learning various new technologies</p>
-<h4>Highlights</h4>
-<ul>
-<li>'RSVP web app' - Implemented a MEAN stack app, to create and RSVP to
- events, from ideation and data modeling to production deployment.</li>
-<li>'Promobot' - Developed a Facebook messenger bot to promote website and retail products.</li>
-<li>'Mutual Fund Trading Web Application' - Developed the backend logic 
-for simulating realistic mutual fund trading by implementing an MVC 
-architecture by using Java J2EE technologies.</li>
-<li>'Youtube Clone' - A project utilizing React and Redux to solidify my
- understanding of the fundamental concepts of the React/Redux framework</li>
-</ul>
-</section>
-</section>
-<section id="education" class="section">
-<h2><i class="fa fa-graduation-cap left"></i>Education</h2>
-<section class="section-sub section-sub-education">
-<h3>Master of Science - Carnegie Mellon University</h3>
-<h4>August 2015 - August 2016</h4>
-<p>Information Technology</p>
-</section>
-</section>
-<section id="skills" class="section">
-<h2><i class="fa fa-tasks left"></i>Skills</h2>
-<section class="section-sub section-sub-skill">
-<h3 class="skills">Web Development</h3>
-<ul class="list-set keywords">
-<li>HTML</li>
-<li>CSS</li>
-<li>JavaScript</li>
-<li>SASS</li>
-<li>AJAX</li>
-<li>Bootstrap</li>
-<li>JQuery</li>
-<li>Angular</li>
-<li>React</li>
-<li>Redux</li>
-<li>Node.js</li>
-<li>Mongo</li>
-</ul>
-</section>
-<section class="section-sub section-sub-skill">
-<h3 class="skills">Languages</h3>
-<ul class="list-set keywords">
-<li>Java</li>
-<li>JavaScript</li>
-<li>MySQL</li>
-<li>C</li>
-<li>C++</li>
-</ul>
-</section>
-</section>
-<section id="interests" class="section">
-<h2><i class="fa fa-star left"></i>Interests</h2>
-<section class="section-sub section-sub-interest">
-<h3 class="skills">Places Travelled to</h3>
-<ul class="list-set keywords">
-<li>Spain</li>
-<li>Maldives</li>
-<li>Russia</li>
-<li>France</li>
-</ul>
-</section>
-<section class="section-sub section-sub-interest">
-<h3 class="skills">Activities</h3>
-<ul class="list-set keywords">
-<li>Adventures</li>
-<li>Snowboarding</li>
-<li>Wake Boarding</li>
-<li>Urban exploration</li>
-<li>Jet skiing</li>
-<li>Swimming</li>
-</ul>
-</section>
-</section>
-</main>
-</div>
-<script data-cfasync="false" src="Shapan%20Dashore_files/email-decode.js"></script>
+    <div class="div1">
+        <h2>Step 1</h2>
+        <table border='1' id='Step1'>
+            <thead>
+                <td>S no.</td>
+                <td>Baseline platelet count</td>
+                <td>Volume of Blood drawn</td>
+                <td>Final Platelet count in PRP</td>
+                <td>Volume of PRP produced</td>
+                <td>Efficiency</td>
+            </thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td><input type="number" id="BPC1"></td>
+                <td>10 ml</td>
+                <td><input type="number" id="FPCIP1"></td>
+                <td>3 ml</td>
+                <td><input type="text" id="effi1"/></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><input type="number" id="BPC2"></td>
+                <td>10 ml</td>
+                <td><input type="number" id="FPCIP2"></td>
+                <td>3 ml</td>
+                <td><input type="text" id="effi2"/></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><input type="number" id="BPC3"></td>
+                <td>10 ml</td>
+                <td><input type="number" id="FPCIP3"></td>
+                <td>3 ml</td>
+                <td><input type="text" id="effi3"/></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><input type="number" id="BPC4"></td>
+                <td>10 ml</td>
+                <td><input type="number" id="FPCIP4"></td>
+                <td>3 ml</td>
+                <td><input type="text" id="effi4"/></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><input type="number" id="BPC5"></td>
+                <td>10 ml</td>
+                <td><input type="number" id="FPCIP5"></td>
+                <td>3 ml</td>
+                <td><input type="text" id="effi5"/></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td><input type="number" id="BPC6"></td>
+                <td>10 ml</td>
+                <td><input type="number" id="FPCIP6"></td>
+                <td>3 ml</td>
+                <td><input type="text" id="effi6"/></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td><input type="number" id="BPC7"></td>
+                <td>10 ml</td>
+                <td><input type="number" id="FPCIP7"></td>
+                <td>3 ml</td>
+                <td><input type="text" id="effi7"/></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td><input type="number" id="BPC8"></td>
+                <td>10 ml</td>
+                <td><input type="number" id="FPCIP8"></td>
+                <td>3 ml</td>
+                <td><input type="text" id="effi8"/></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td><input type="number" id="BPC9"></td>
+                <td>10 ml</td>
+                <td><input type="number" id="FPCIP9"></td>
+                <td>3 ml</td>
+                <td><input type="text" id="effi9"/></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td><input type="number" id="BPC10"></td>
+                <td>10 ml</td>
+                <td><input type="number" id="FPCIP10"></td>
+                <td>3 ml</td>
+                <td><input type="text" id="effi10"/></td>
+            </tr>
+            <tr>
+                <td>Mean Efficiency</td>
+                <td><input type="text" id ="MeanEfficiency" /></td>
+            </tr>
+            </tbody>
+        </table>
+        <button id="button1" onclick='calcMean();return false;'>
+            Get Mean</button>
+    </div>
 
-</body></html>
+    <div class="div2">
+        <h2>Step 2</h2>
+        <table id="Step2" border='1' id='Step 2'>
+            <thead>
+                <td>Calculation on the volume of blood that needs to be drawn</td>
+            </thead>
+            <tr>
+                <td>Baseline platelet count of Patient</td>
+                <td>Volume of PRP needed</td>
+                <td>Concentration of platelets needed in PRP</td>
+                <td>Mean efficiency</td>
+            </tr>
+            <tr>
+                <td><input type="number" id="BPCStep2" /></td>
+                <td><input type="number" id="VPRPStep2" /></td>
+                <td><input type="number" id="CPNStep2" /></td>
+                <td><input type="number" id="MEFromStep1" /></td>
+            </tr>
+            <tr>
+                <td>Please draw</td>
+                <td><input type="text" id="result" /></td>
+                <td>ml of blood.</td>
+            </tr>
+        </table>
+        <button id="button2" onclick='bloodDrawn();return false;'>
+            Get Amount of Blood Drawn</button>
+    </div>
+
+<script type="text/javascript">
+    //Step 1
+    function calcMean()
+    {
+        let ef1 = ( document.getElementById("FPCIP1").value * 3 ) / ( document.getElementById("BPC1").value * 10);
+        document.getElementById("effi1").value = ef1;
+        console.log(ef1);
+    
+        let ef2 = ( document.getElementById("FPCIP2").value * 3 ) / ( document.getElementById("BPC2").value * 10);
+        document.getElementById("effi2").value = ef2;
+        console.log(ef2);
+    
+        let ef3 = ( document.getElementById("FPCIP3").value * 3 ) / ( document.getElementById("BPC3").value * 10);
+        document.getElementById("effi3").value = ef3;
+        console.log(ef3);
+    
+        let ef4 = ( document.getElementById("FPCIP4").value * 3 ) / ( document.getElementById("BPC4").value * 10);
+        document.getElementById("effi4").value = ef4;
+        console.log(ef4);
+        
+        let ef5 = ( document.getElementById("FPCIP5").value * 3 ) / ( document.getElementById("BPC5").value * 10);
+        document.getElementById("effi5").value = ef5;
+        console.log(ef5);
+
+        let ef6 = ( document.getElementById("FPCIP6").value * 3 ) / ( document.getElementById("BPC6").value * 10);
+        document.getElementById("effi6").value = ef6;
+        console.log(ef6);
+
+        let ef7 = ( document.getElementById("FPCIP7").value * 3 ) / ( document.getElementById("BPC7").value * 10);
+        document.getElementById("effi7").value = ef7;
+        console.log(ef7);
+
+        let ef8 = ( document.getElementById("FPCIP8").value * 3 ) / ( document.getElementById("BPC8").value * 10);
+        document.getElementById("effi8").value = ef8;
+        console.log(ef8);
+
+        let ef9 = ( document.getElementById("FPCIP9").value * 3 ) / ( document.getElementById("BPC9").value * 10);
+        document.getElementById("effi9").value = ef9;
+        console.log(ef9);
+
+        let ef10 = ( document.getElementById("FPCIP10").value * 3 ) / ( document.getElementById("BPC10").value * 10);
+        document.getElementById("effi10").value = ef10;
+        console.log(ef10);
+
+        let MeanEfficiency = 0.1 * (ef1 + ef2 + ef3 + ef4 + ef5 + ef6 + ef7 + ef8 + ef9 + ef10);
+        document.getElementById("MeanEfficiency").value = MeanEfficiency;
+        document.getElementById("MEFromStep1").value = MeanEfficiency;
+        console.log(MeanEfficiency);
+    }
+    //Step 2
+    function bloodDrawn() 
+    {
+        let bd = ( document.getElementById("CPNStep2").value * document.getElementById("VPRPStep2").value ) / ( document.getElementById("BPCStep2").value * document.getElementById("MEFromStep1").value );
+        document.getElementById("result").value = bd;
+        console.log(bd);
+    }
+    </script>
+</body>
+</html>
